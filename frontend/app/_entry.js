@@ -1,5 +1,5 @@
 // Arquivos SCSS
-import './_app/app.scss'
+import './_assets/app.scss'
 
 // Dependencias
 import 'jquery'

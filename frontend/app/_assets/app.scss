@@ -1,9 +1,20 @@
+/* STYLES NODE_MODULES
+================================== */
+
 @import '~nprogress/nprogress.css';
 @import '~bootstrap/scss/bootstrap.scss';
 @import '~hamburgers/dist/hamburgers.min.css';
 @import '~swiper/dist/css/swiper.min.css';
 @import '~aos/dist/aos.css';
 
+/* CORE PROJECT
+================================== */
+
 @import 'scss/core/variable';
 @import 'scss/core/mixins';
 @import 'scss/core/breakpoints';
+
+/* COMPONENTS
+================================== */
+
+@import 'scss/components/global';

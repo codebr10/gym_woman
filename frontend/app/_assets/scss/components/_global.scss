@@ -1,0 +1,16 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+*, *:before, *:after {
+  	box-sizing: border-box;
+}
+
+body{
+	font-size: 16px;
+    font-family: $font;
+    font-weight: normal;
+	color: $black;
+	background-color: $white;
+}

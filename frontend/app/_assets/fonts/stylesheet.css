@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Mplus 1p';
+    src: url('Mplus1p-Black.eot');
+    src: url('Mplus1p-Black.eot?#iefix') format('embedded-opentype'),
+        url('Mplus1p-Black.woff2') format('woff2'),
+        url('Mplus1p-Black.woff') format('woff'),
+        url('Mplus1p-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mplus 1p';
+    src: url('Mplus1p-Regular.eot');
+    src: url('Mplus1p-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Mplus1p-Regular.woff2') format('woff2'),
+        url('Mplus1p-Regular.woff') format('woff'),
+        url('Mplus1p-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mplus 1p';
+    src: url('Mplus1p-Light.eot');
+    src: url('Mplus1p-Light.eot?#iefix') format('embedded-opentype'),
+        url('Mplus1p-Light.woff2') format('woff2'),
+        url('Mplus1p-Light.woff') format('woff'),
+        url('Mplus1p-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
