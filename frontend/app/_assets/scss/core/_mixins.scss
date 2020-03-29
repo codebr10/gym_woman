@@ -1,0 +1,73 @@
+//exemple -> @include transitions(0.2s);
+@mixin transitions($transitions) {
+    transition: all $transitions ease-in-out;
+}
+
+//exemple -> @include transitions_cubic(500ms);
+@mixin transitions_cubic($transitions_cubic) {
+    transition: all $transitions_cubic cubic-bezier(0.860, 0.000, 0.070, 1.000);
+    /* easeInOutQuint */
+}
+
+//exemple -> @include radius(100px);
+@mixin radius($radius) {
+    border-radius: $radius;
+}
+
+//exemple -> @include box-shadow(0, 1px, 2px, rgba(0, 0, 0, 0.2));
+@mixin box_shadow($top, $left, $blur, $color, $inset: false) {
+    @if $inset {
+        box-shadow: inset $top $left $blur $color;
+    }
+    @else {
+        box-shadow: $top $left $blur $color;
+    }
+}
+
+//exemple -> @include scale(1.15);
+@mixin scale($scale) {
+    transform: scale($scale);
+}
+
+//exemple -> @include rotate(7deg)
+@mixin rotate($rotate) {
+    transform: rotate($rotate);
+}
+
+//exemple -> @include skew(30deg)
+@mixin skew($skew) {
+    transform: skew($skew);
+}
+
+//exemple -> @include rotate_scale(1.15, 7deg);
+@mixin rotate_scale($scale, $rotate) {
+    transform: scale($scale) rotate($rotate);
+}
+
+//exemple -> @include placeholder { font-style:italic!important; color: white!important; font-weight:100!important; }
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content;
+        @include transitions(0.5s);
+    }
+}
+
+@mixin cover {
+    background-size: cover;
+}
+
+@mixin gray {
+    filter: grayscale(100%);
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+
+@mixin center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
