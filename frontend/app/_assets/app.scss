@@ -13,8 +13,12 @@
 @import 'scss/core/variable';
 @import 'scss/core/mixins';
 @import 'scss/core/breakpoints';
+@import 'scss/core/fonts';
+@import 'scss/core/grid';
 
 /* COMPONENTS
 ================================== */
 
 @import 'scss/components/global';
+@import 'scss/components/header';
+@import 'scss/components/hero';

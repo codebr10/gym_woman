@@ -1,0 +1,21 @@
+.app-header{
+    opacity: 0;
+    width: 100%;
+    position: absolute;
+    padding: 15px 0;
+    z-index: 999;
+    .app-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .hamburger{
+        outline: none;
+        .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before, {
+            background-color: $light;
+        }
+        .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before{
+            background-color: $light;
+        }
+    }
+}
