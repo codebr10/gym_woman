@@ -10,7 +10,9 @@
         justify-content: space-between;
     }
     .hamburger{
+        position: relative;
         outline: none;
+        z-index: 11;
         .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before, {
             background-color: $light;
         }

@@ -32,3 +32,39 @@ TweenMax.to('.app-header', 2, {
     ease: Expo.easeInOut,
     delay: 4,
 });
+
+/* NAV ANIMATION
+================================== */
+
+$('body').on('click', '.hamburger', function (e) {
+
+    var tlmenu = new TimelineMax({ paused: true, delay: -1, immediateRender: true });
+
+    tlmenu.staggerFromTo('.app-nav--list li', 3,
+        { opacity: 1, ease: Expo.easeInOut },
+        { opacity: 0, ease: Expo.easeInOut }, 0.1);
+
+    if ($(this).hasClass('is-active')) {
+        tlmenu.reverse(0)
+        TweenMax.to('.app-nav', 3, {
+            left: "0",
+            ease: Expo.easeInOut,
+            delay: -1,
+        });
+    } else {
+        setTimeout(function () {
+            TweenMax.to('.app-nav', 3, {
+                left: "-100%",                
+                ease: Expo.easeInOut,
+                delay: -1,
+                //immediateRender: true
+            });
+        }, 1500);
+        tlmenu.play(1);
+    }
+
+    setTimeout(function () {
+
+    }, 2000);
+
+});
